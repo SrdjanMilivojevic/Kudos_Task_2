@@ -1,0 +1,11 @@
+Napraviti Kalendar u PHP-u.
+
+Kalendar treba da funkcionise po sledecem principu.
+
+Kada se otvori stranica treba da bude oznacen trenutni dan.
+Treba da postoji dugme predhodni i dugme sledeci mesec.
+Klikom na dugme predhodni, prikazati predhodni mesec u odnosu na trenutni koji je prikazan.
+Klikom na dugme sledeci, prikazati sledeci mesec u odnosu na trenutni koji je prikazan.
+
+NAPOMENA:
+Obavezna upotreba Singletona.
