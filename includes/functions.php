@@ -97,6 +97,7 @@ class Kalendar
 
     /**
      * Encapsulated negative iteration
+     *
      * @param  int $month
      * @return int $month
      */
