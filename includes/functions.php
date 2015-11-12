@@ -8,7 +8,7 @@ class Kalendar
     public static function getInstance()
     {
         if (self::$_instance == null) {
-            self::$_instance = new Kalendar();
+            self::$_instance = new self; // No need to explicitly call Kalendar class
         }
 
         return self::$_instance;
@@ -94,24 +94,25 @@ class Kalendar
         }
         echo '</tr></table>';
     }
+
     /**
-     * Encapsulated negative iteration [Do it wont bug]
+     * Encapsulated negative iteration
      * @param  int $month
      * @return int $month
      */
     private function prevMonth($month)
     {
         return --$month;
-
     }
+
     /**
-     * Encapsulated positive iteration [Do it wont bug]
+     * Encapsulated positive iteration
+     *
      * @param  int $month
      * @return int $month
      */
     private function nextMonth($month)
     {
         return ++$month;
-
     }
 }
